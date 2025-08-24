@@ -1,0 +1,42 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "font": "FiraCode Nerd Font 10",
+  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "cpu", "memory", "battery"],
+
+  "sway/workspaces": {
+    "all-outputs": true,
+    "disable-scroll": false,
+    "format": "{name}",
+    "tooltip": false
+  },
+
+  "sway/window": {
+    "format": "{title}"
+  },
+
+  "clock": {
+    "format": "{:%a %d %b %Y %H:%M}"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {used} / {total}GB"
+  },
+
+  "battery": {
+    "format": "{capacity}% ",
+    "format-charging": "⚡ {capacity}%"
+  }
+}

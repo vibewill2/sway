@@ -1,0 +1,29 @@
+* {
+    font-family: "FiraCode Nerd Font", monospace;
+}
+
+#waybar {
+    background: rgba(40, 44, 52, 0.85);
+    color: #e0def4;
+    border-bottom: 2px solid #8bd5ca;
+}
+
+#workspaces button, #sway-window, #clock, #pulseaudio, #cpu, #memory, #battery {
+    padding: 0 12px;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    background: #4c566a;
+    color: #d8dee9;
+}
+
+#workspaces button:hover,
+#sway-window:hover,
+#clock:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover {
+    background: #5e81ac;
+    color: #eceff4;
+}
