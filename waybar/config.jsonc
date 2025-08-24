@@ -3,23 +3,24 @@
   "position": "top",
   "height": 36,
   "font": "Font Awesome 6 Free Solid 10",
+
   "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "cpu", "memory", "battery"],
+  "modules-right": ["tray", "pulseaudio", "cpu", "memory", "battery"],
 
   "sway/workspaces": {
     "all-outputs": true,
     "disable-scroll": false,
-    "format": " {name}",   // círculo para workspace
+    "format": " {name}",
     "tooltip": false
   },
 
   "sway/window": {
-    "format": " {title}"   // ícone de janela
+    "format": " {title}"
   },
 
   "clock": {
-    "format": " {:%a %d %b %Y %H:%M}"   // ícone de relógio
+    "format": " {:%a %d %b %Y %H:%M}"
   },
 
   "pulseaudio": {
@@ -32,11 +33,16 @@
   },
 
   "memory": {
-    "format": " {used} / {total}GB"   // ícone de chip de memória
+    "format": " {used} / {total}GB"
   },
 
   "battery": {
     "format": " {capacity}%",
     "format-charging": "⚡ {capacity}%"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
   }
 }
