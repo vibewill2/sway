@@ -113,6 +113,7 @@ exec_always waybar &
 # Inicializa o daemon se não estiver rodando
 
 # Aplica o wallpaper inicial
+exec_always waypaper --restore &
 exec_always --no-startup-id $HOME/.local/bin/waypaper &
 exec_always --no-startup-id /usr/local/bin/swww-daemon --format xrgb &
 # Set inner/outer gaps
