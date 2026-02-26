@@ -1,1 +1,3 @@
 pip install waypaper
+sudo zypper install opi
+opi swayfx
